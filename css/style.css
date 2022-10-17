@@ -518,23 +518,6 @@ body {
   border-radius: 5px;
 }
 
-label.error {
-  display: none !important;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-form {
-  border: 1px solid #c3c3c3;
-  padding: 15px;
-  width: 320px;
-}
-
 form input {
   width: 100%;
   height: 50px;
