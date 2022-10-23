@@ -215,7 +215,7 @@ body{
 .about-info{
     color: #fff;
     opacity: 0.6;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 40px;
 }
 
@@ -224,25 +224,6 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-}
-
-.download-cv-btn{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.download-cv-btn:hover{
-    background: #000;
 }
 
 /* skills */
@@ -339,7 +320,7 @@ body{
     color: #4fdfff;
 }
 
-/* timeline */
+/* timeline */ 
 
 .timeline{
     display: block;
@@ -360,6 +341,9 @@ body{
     margin: -80px 0;
     position: relative;
     background: #f00;
+    .card-body{
+        margin: 5%;
+    }
 }
 
 .card:nth-child(even){
@@ -426,9 +410,6 @@ body{
 .card:nth-child(5), .card:nth-child(5):before{
     background: #565252;
 }
-.card:nth-child(6), .card:nth-child(6):before{
-    background: #4fa0ff;
-}
 
 .card:nth-child(even) .card-body:before{
     content: '';
@@ -459,38 +440,16 @@ body{
     grid-gap: 50px;
 }
 
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    color: #fff;
-    padding: 5px 10px;
-}
-
-::placeholder{
-    color: #fff;
-}
-
-#msg{
-    height: 280px;
-    resize: none;
-    font-family: sans-serif;
-}
-
-.form-submit-btn{
-    background: #ff4f4f;
-    color: #fff;
-    text-transform: capitalize;
-    padding: 15px 40px;
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.contact{
+    margin: 10%;
+    .contact-link{
+        text-decoration: none;
+        .linl-img{
+            margin: 5%;
+            max-width: 30%;
+            max-height: 30%;
+        }
+    }
 }
 
 .map{
@@ -506,36 +465,4 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-}
-/////@at-root
-form input {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #c3c3c3;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-}
-
-form input.error{
-    border-color:red;
-}
-
-form textarea {
-    width: 100%;
-    border: 1px solid #c3c3c3;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    line-height: 18px;
-}
-
-form button {
-    height: 50px;
-    width: 100%;
-    cursor: pointer;
 }
